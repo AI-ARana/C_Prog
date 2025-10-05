@@ -88,12 +88,171 @@
 
 // cost constant
 
-#include<stdio.h>
-int main(){
-    const int x;
-    // x=20;
-    system("cls");
+// #include<stdio.h>
+// int main(){
+//     const int x;
+//     // x=20;
+//     system("cls");
 
-    printf("%d",x);
+//     printf("%d",x);
+//     return 0;
+// }
+
+
+// char ch='A';
+// Output= ASCII value of A=65
+// Find the value of a character using implicit conversion with format specifier
+
+// #include<stdio.h>
+// int main(){
+//     char c ='k';
+//     system("cls");
+
+//     // %d display the integer value of a charcter
+//     // %c displays the actual character
+//     printf("The ASCII value of %c is %d",c,c);
+//     return 0;   
+// }
+
+// ASCII value of a character using explicit conversion (Typecasting)
+
+// #include<stdio.h>
+// int main(){
+//     char c='k';
+//     int ascii;
+//     system("cls");
+
+//     ascii=(int)c;
+
+//     printf("The ASCII value of %c is %d",c,ascii);
+//     return 0;   
+// }
+
+
+// Decision Making Statements
+
+// #include<stdio.h>
+// int main(){
+//     int age;
+//     int c;
+//     system("cls");
+//     printf("Enter 1 if you are Indian Citizen:");
+//     scanf("%d",&c);
+    
+//     if(c==1)
+//     {
+//         printf("You are Indian Citizen.\n");
+//         printf("Enter your age:");
+//         scanf("%d",&age);
+//     if(age>=18){
+//         printf("You are eligible to vote.");
+//     }
+//     else{
+//         printf("You are not eligible to vote.");
+//     }
+//     }
+// else{
+//     printf("You are not Indian Citizen."); 
+//  }
+//     return 0;
+// }
+
+// if -else -if -Ladder in c
+
+// #include<stdio.h>
+// int main(){
+//     int marks;
+//     system("cls");
+//     printf("Enter your marks:");
+//     scanf("%d",&marks);
+
+//     if(marks>=90 && marks<=100){
+//         printf("Your Grade is A+");
+//     }
+//     else if(marks>=80 && marks<90){
+//         printf("Your Grade is A");
+//     }
+//     else if(marks>=70 && marks<80){
+//         printf("Your Grade is B+");
+//     }
+//     else if(marks>=60 && marks<70){
+//         printf("Your Grade is B");
+//     }
+//     else if(marks>=50 && marks<60){
+//         printf("Your Grade is C");
+//     }
+//     else if(marks>=40 && marks<50){
+//         printf("Your Grade is D");
+//     }
+//     else if(marks>=0 && marks<40){
+//         printf("You are Fail.");
+//     }
+//     else{
+//         printf("Invalid Marks.");
+//     }
+//     return 0;
+// }
+
+// Switch Case Statement
+// 
+
+// Conditional Operators
+
+// #include<stdio.h>
+// int main(){ 
+//     int age;
+//     char c;
+//     system("cls");
+//     printf("Enter your age:");
+//     scanf("%d",&age);
+
+//     c=(age>=18)?'Y':'N';
+
+//     if(c=='Y'){
+//         printf("You are eligible to vote.");
+//     }
+//     else{
+//         printf("You are not eligible to vote.");
+//     }
+//     return 0;
+// }
+
+// #include<stdio.h>
+// int main(){
+//     int var;
+//     int flag;
+//     system("cls");
+//     printf("Enter the value of flag (0 or 1):");
+//     scanf("%d",&flag);  
+//     //var=flag==0?25:-25;   a==1?b:c  a=1 b a=0
+//     if(flag==0){
+//         var=25;
+//     }
+//     else{
+//         var=-25;
+//     }
+//     printf("Value of var when flag is %d: %d\n",flag,var);
+//     int x=var-10;
+//     printf("Value of x is: %d",x);
+//     return 0;   
+// }
+
+
+#include<stdio.h>
+int main()
+{
+    char c, vow;
+
+    printf("Enter an alphabet:");
+    scanf("%c",&c);
+    vow=('a','e','i','o','u','A','E','I','O','U');
+    if (vow==c)
+    {
+        printf("%c is a Vowel",c);
+    }
+    else
+    {
+        printf("%c is a Consonant",c);
+    }   
     return 0;
 }
